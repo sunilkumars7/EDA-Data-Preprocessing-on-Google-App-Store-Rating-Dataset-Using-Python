@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The Play Store apps data has enormous potential to drive app-making businesses to success.However, many apps are being developed every single day and only a few of them become profitable. It is important for developers to be able to predict the success of their app and incorporate features which makes an app successful. Before any such predictive-study can be done, it is necessary to do EDA and data-preprocessing on the apps data available for google app store applications. From the collected apps data and user ratings from the app stores, let's try to extract insightful information. 
+The Play Store apps data has enormous potential to drive app-making businesses to success.However, many apps are being developed every single day and only a few of them become profitable.It is important for developers to be able to predict the success of their app and incorporate features which makes an app successful. Before any such predictive-study can be done, it is necessary to do EDA and data-preprocessing on the apps data available for google app store applications. From the collected apps data and user ratings from the app stores, let's try to extract insightful information. 
 
 ## Objective
 
@@ -40,20 +40,20 @@ Checked the shape, data types and structure of the dataframe.
 
 ## 3. Summary Statistics
 Generated summary statistics for numerical columns to understand the central tendency, spread, skewness and distribution of data.
-Generated summary statistics for categorical columns to understand the count (total records), unique (Distinct Category Value), top (mode), and freq (frequency).
+Generated summary statistics for categorical columns to understand the count (total records), unique (Distinct Category Value count), top (mode), and freq (frequency).
 
 ## 4. Handling Duplicate Records
 Checked for the presence of the duplicate records.
 If duplicates records are present, then all the duplicate records are removed.
 
 ## 5. Cleaning the 'Category' Column
-Inspect the 'Category' column for invalid or irrelevant categories and clean it accordingly.
+Inspected the 'Category' column for invalid or irrelevant categories and cleaned it accordingly.
 
 ## 6. Handling Missing Values in 'Rating'
-Identify and handle missing values in the 'Rating' column. Missing ratings are dropped, and a new column 'Rating_category' is created by classifying ratings into 'High' (>3.5) and 'Low' (<=3.5).
+Identified and handled the missing values in the 'Rating' column. Missing ratings are dropped, and a new column 'Rating_category' is created by classifying ratings into 'High' (>3.5) and 'Low' (<=3.5).
 
 ## 7. Distribution of 'Rating_category'
-Analyze and visualize the distribution of the 'Rating_category' column.
+Visualized the distribution of the 'Rating_category' column.
 
 ## 8. Handling 'Reviews' Column
 Converted the 'Reviews' column to a numeric data type. To check for presence of outliers, a boxplot is plotted. Since the column has outlier, applied a log transformation to handle outliers.
@@ -62,13 +62,13 @@ Converted the 'Reviews' column to a numeric data type. To check for presence of 
 The 'Size' column contains alphanumeric values.Treating this column by converting the values to numerical format (M = million, K = thousand), and droped rows where 'Size' is marked as 'Varies with device'.
 
 ## 10. Clean and Convert 'Installs' Column
-Inspect the 'Installs' column for unwanted characters, if unwanted characters are present, then treat the unwanted characters and convert the column to integers.
+Inspected the 'Installs' column for unwanted characters, since unwanted characters are present, treated the unwanted characters and converted the column to integers.
 
 ## 11. Clean and Convert 'Price' Column
-clean the 'Price' column by removing the '$' symbol and convert the remaining values to numeric data.
+cleaned the 'Price' column by removing the '$' symbol and converted the remaining values to numeric data.
 
 ## 12. Droping Redundant Columns
-Redundant columns such as 'App', 'Rating', 'Genres', 'Last Updated', 'Current Ver', and 'Android Ver' are dropped to focus on relevant features.
+Redundanted columns such as 'App', 'Rating', 'Genres', 'Last Updated', 'Current Ver', and 'Android Ver' are dropped to focus on relevant features.
 
 ## 13. Encoding Categorical Columns
 Categorical columns such as 'Category', 'Content Rating', and 'Type' are encoded using appropriate encoding techniques (e.g., label encoding, one-hot encoding).
